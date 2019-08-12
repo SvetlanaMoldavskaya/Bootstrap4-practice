@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+    </div>
+
+    <div class="container-fluid">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+    </div>
+
+    <!-- Control the column width, and how they should appear on different devices -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">.col-4</div>
+            <div class="col-4">.col-4</div>
+            <div class="col-4">.col-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-4">.col-sm-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">.col-lg-4</div>
+            <div class="col-lg-4">.col-lg-4</div>
+            <div class="col-lg-4">.col-lg-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4">.col-xl-4</div>
+            <div class="col-xl-4">.col-xl-4</div>
+            <div class="col-xl-4">.col-xl-4</div>
+        </div>
+    </div>
+
+    <!-- Or let Bootstrap automatically handle the layout -->
+    <div class="row">
+        <div class="col">One</div>
+        <div class="col">Two</div>
+        <div class="col">Three</div>
+    </div>
+
+    <!-- Three equal columns
+    You can have three equal-width columns starting at desktops and 
+    scaling to large desktops. 
+    On mobile devices, tablets and smaller, 
+    the columns will automatically stack. -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+    </div>
+
+    <!-- Two columns with two nested columns
+    As in the documentation, nesting is easy 
+    — just put a row of columns within an existing column. 
+    This gives you two columns starting at desktops and 
+    scaling to large desktops, with another two (equal widths) 
+    within the larger column.
+        At mobile device sizes, tablets and down, 
+        these columns and their nested columns will stack. -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                .col-md-8
+                <div class="row">
+                    <div class="col-md-6">.col-md-6</div>
+                    <div class="col-md-6">.col-md-6</div>
+                </div>
+            </div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 ">.col-12 .col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+        </div>
+    </div>
+    <button>Button</button>
+    <button class="btn btn-success">Success</button>
+    <div class="card">
+        <div class="card-body">Basic card</div>
+    </div>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on top
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on right
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom"
+        data-content="Vivamus
+      sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on bottom
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on left
+    </button>
+    <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle
+        popover</a>
+
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+        data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+    <!-- This is how you can use Jumbotron - a hero section. -->
+    <div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
